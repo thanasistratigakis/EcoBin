@@ -12,6 +12,9 @@
 		ED40AC7E1B9B2EA0004E7101 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC7D1B9B2EA0004E7101 /* LeaderboardViewController.swift */; };
 		ED40AC801B9B2ED9004E7101 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC7F1B9B2ED9004E7101 /* AddFriendsViewController.swift */; };
 		ED40AC821B9B2EE6004E7101 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC811B9B2EE6004E7101 /* MyAccountViewController.swift */; };
+		ED40AC841B9B3058004E7101 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC831B9B3058004E7101 /* ParseHelper.swift */; };
+		ED40AC871B9B563C004E7101 /* LeaderboardUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED40AC861B9B563C004E7101 /* LeaderboardUserCell.xib */; };
+		ED40AC891B9B564D004E7101 /* LeaderboardUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC881B9B564D004E7101 /* LeaderboardUserCell.swift */; };
 		EDE57FE41B9ACD5300E98DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */; };
 		EDE57FE91B9ACD5300E98DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FE71B9ACD5300E98DFB /* Main.storyboard */; };
 		EDE57FEB1B9ACD5300E98DFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FEA1B9ACD5300E98DFB /* Images.xcassets */; };
@@ -38,6 +41,9 @@
 		ED40AC7D1B9B2EA0004E7101 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		ED40AC7F1B9B2ED9004E7101 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
 		ED40AC811B9B2EE6004E7101 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		ED40AC831B9B3058004E7101 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
+		ED40AC861B9B563C004E7101 /* LeaderboardUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardUserCell.xib; sourceTree = "<group>"; };
+		ED40AC881B9B564D004E7101 /* LeaderboardUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardUserCell.swift; sourceTree = "<group>"; };
 		EDE57FDE1B9ACD5300E98DFB /* EcoBin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoBin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE57FE21B9ACD5300E98DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,12 +94,22 @@
 		ED40AC791B9ACF69004E7101 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED40AC851B9B5543004E7101 /* LeaderboardCells */,
 				ED40AC7A1B9ACF81004E7101 /* LoginViewController.swift */,
 				ED40AC7D1B9B2EA0004E7101 /* LeaderboardViewController.swift */,
 				ED40AC7F1B9B2ED9004E7101 /* AddFriendsViewController.swift */,
 				ED40AC811B9B2EE6004E7101 /* MyAccountViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED40AC851B9B5543004E7101 /* LeaderboardCells */ = {
+			isa = PBXGroup;
+			children = (
+				ED40AC861B9B563C004E7101 /* LeaderboardUserCell.xib */,
+				ED40AC881B9B564D004E7101 /* LeaderboardUserCell.swift */,
+			);
+			path = LeaderboardCells;
 			sourceTree = "<group>";
 		};
 		EDE57FD51B9ACD5300E98DFB = {
@@ -126,6 +142,7 @@
 				EDE57FEA1B9ACD5300E98DFB /* Images.xcassets */,
 				EDE57FEC1B9ACD5300E98DFB /* LaunchScreen.xib */,
 				EDE57FE11B9ACD5300E98DFB /* Supporting Files */,
+				ED40AC831B9B3058004E7101 /* ParseHelper.swift */,
 			);
 			path = EcoBin;
 			sourceTree = "<group>";
@@ -237,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED40AC871B9B563C004E7101 /* LeaderboardUserCell.xib in Resources */,
 				EDE57FE91B9ACD5300E98DFB /* Main.storyboard in Resources */,
 				EDE57FEE1B9ACD5300E98DFB /* LaunchScreen.xib in Resources */,
 				EDE57FEB1B9ACD5300E98DFB /* Images.xcassets in Resources */,
@@ -292,9 +310,11 @@
 			files = (
 				ED40AC801B9B2ED9004E7101 /* AddFriendsViewController.swift in Sources */,
 				ED40AC7B1B9ACF81004E7101 /* LoginViewController.swift in Sources */,
+				ED40AC891B9B564D004E7101 /* LeaderboardUserCell.swift in Sources */,
 				ED40AC821B9B2EE6004E7101 /* MyAccountViewController.swift in Sources */,
 				ED40AC7E1B9B2EA0004E7101 /* LeaderboardViewController.swift in Sources */,
 				EDE57FE41B9ACD5300E98DFB /* AppDelegate.swift in Sources */,
+				ED40AC841B9B3058004E7101 /* ParseHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

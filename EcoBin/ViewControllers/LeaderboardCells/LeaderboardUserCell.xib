@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="73" id="x49-qW-YRN" customClass="LeaderboardUserCell" customModule="EcoBin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="1" width="320" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x49-qW-YRN" id="0Af-wO-1Jh">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uH-QM-O9f">
+                        <rect key="frame" x="13" y="21" width="22" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="XWx-GW-WTl"/>
+                            <constraint firstAttribute="height" constant="32" id="uMj-30-9GQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanasi Stratigakis" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Od-uN-tIK">
+                        <rect key="frame" x="38" y="8" width="145.5" height="56.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-70-FRe">
+                        <rect key="frame" x="255" y="8" width="50" height="56.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="D6d-Yz-ubB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="0Od-uN-tIK" secondAttribute="centerY" id="6d4-ci-Ue5"/>
+                    <constraint firstItem="2uH-QM-O9f" firstAttribute="leading" secondItem="0Af-wO-1Jh" secondAttribute="leadingMargin" constant="5" id="Bm5-Mh-Gle"/>
+                    <constraint firstItem="0Od-uN-tIK" firstAttribute="top" secondItem="0Af-wO-1Jh" secondAttribute="topMargin" id="FWf-m5-KH9"/>
+                    <constraint firstItem="0Od-uN-tIK" firstAttribute="leading" secondItem="2uH-QM-O9f" secondAttribute="trailing" constant="3" id="bEi-Wi-sDH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XVs-70-FRe" secondAttribute="bottom" id="cnY-jp-xTb"/>
+                    <constraint firstAttribute="centerY" secondItem="2uH-QM-O9f" secondAttribute="centerY" constant="-0.75" id="hjr-FE-98p"/>
+                    <constraint firstItem="XVs-70-FRe" firstAttribute="top" secondItem="0Af-wO-1Jh" secondAttribute="topMargin" id="lFl-Lu-KKK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0Od-uN-tIK" secondAttribute="bottom" id="maG-Lx-obP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XVs-70-FRe" secondAttribute="trailing" constant="7" id="nHh-D4-tp7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="317" y="205.5"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="I6a-hl-3fq">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I6a-hl-3fq" id="Jar-WW-hZE">
+                <autoresizingMask key="autoresizingMask"/>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

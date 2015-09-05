@@ -25,7 +25,7 @@
         <!--Item 2-->
         <scene sceneID="baF-Iq-ACa">
             <objects>
-                <viewController id="QRJ-De-EgQ" sceneMemberID="viewController">
+                <viewController id="QRJ-De-EgQ" customClass="AddFriendsViewController" customModule="EcoBin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B8t-7m-UUw"/>
                         <viewControllerLayoutGuide type="bottom" id="hDX-ZF-Qcn"/>
@@ -44,7 +44,7 @@
         <!--Item-->
         <scene sceneID="Kfw-D1-ccO">
             <objects>
-                <viewController id="WVb-d4-mbj" sceneMemberID="viewController">
+                <viewController id="WVb-d4-mbj" customClass="MyAccountViewController" customModule="EcoBin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mxE-3o-XcG"/>
                         <viewControllerLayoutGuide type="bottom" id="bcT-Hi-EL6"/>
@@ -63,7 +63,7 @@
         <!--Item 1-->
         <scene sceneID="75q-Ee-Pxt">
             <objects>
-                <viewController id="xjA-kZ-ni0" sceneMemberID="viewController">
+                <viewController id="xjA-kZ-ni0" customClass="LeaderboardViewController" customModule="EcoBin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A4v-H0-R38"/>
                         <viewControllerLayoutGuide type="bottom" id="xpu-QT-nWQ"/>
@@ -71,7 +71,39 @@
                     <view key="view" contentMode="scaleToFill" id="uLZ-J3-rBK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Me-Pw-4WQ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaderboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chK-A6-Lar">
+                                        <rect key="frame" x="233" y="27.5" width="134" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.54818782660367615" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FdK-Cq-v2n"/>
+                                    <constraint firstAttribute="centerX" secondItem="chK-A6-Lar" secondAttribute="centerX" id="iAC-34-Keu"/>
+                                    <constraint firstAttribute="centerY" secondItem="chK-A6-Lar" secondAttribute="centerY" constant="-12" id="yjx-xp-M5y"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CUP-mk-kNh">
+                                <rect key="frame" x="0.0" y="60" width="600" height="491"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xpu-QT-nWQ" firstAttribute="top" secondItem="CUP-mk-kNh" secondAttribute="bottom" id="0lx-FL-oFw"/>
+                            <constraint firstItem="0Me-Pw-4WQ" firstAttribute="top" secondItem="uLZ-J3-rBK" secondAttribute="top" id="LPz-1P-PT6"/>
+                            <constraint firstItem="CUP-mk-kNh" firstAttribute="leading" secondItem="uLZ-J3-rBK" secondAttribute="leading" id="SeJ-kD-zDx"/>
+                            <constraint firstItem="0Me-Pw-4WQ" firstAttribute="leading" secondItem="uLZ-J3-rBK" secondAttribute="leading" id="cpV-ao-gXz"/>
+                            <constraint firstAttribute="trailing" secondItem="0Me-Pw-4WQ" secondAttribute="trailing" id="eQf-2e-mqQ"/>
+                            <constraint firstAttribute="trailing" secondItem="CUP-mk-kNh" secondAttribute="trailing" id="iDc-VN-ClO"/>
+                            <constraint firstItem="CUP-mk-kNh" firstAttribute="top" secondItem="0Me-Pw-4WQ" secondAttribute="bottom" id="wR9-BZ-chZ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="DRn-l1-cxn"/>
                 </viewController>
