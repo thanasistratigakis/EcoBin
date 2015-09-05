@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7BED54B0F69860E276F9638E /* libPods-EcoBin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E0334836F283E52F2F2711 /* libPods-EcoBin.a */; };
 		ED40AC7B1B9ACF81004E7101 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC7A1B9ACF81004E7101 /* LoginViewController.swift */; };
+		ED40AC7E1B9B2EA0004E7101 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC7D1B9B2EA0004E7101 /* LeaderboardViewController.swift */; };
+		ED40AC801B9B2ED9004E7101 /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC7F1B9B2ED9004E7101 /* AddFriendsViewController.swift */; };
+		ED40AC821B9B2EE6004E7101 /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC811B9B2EE6004E7101 /* MyAccountViewController.swift */; };
 		EDE57FE41B9ACD5300E98DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */; };
 		EDE57FE91B9ACD5300E98DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FE71B9ACD5300E98DFB /* Main.storyboard */; };
 		EDE57FEB1B9ACD5300E98DFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FEA1B9ACD5300E98DFB /* Images.xcassets */; };
@@ -32,6 +35,9 @@
 		C3523892ECFB3BDD37CCB63D /* Pods-EcoBin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EcoBin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EcoBin/Pods-EcoBin.debug.xcconfig"; sourceTree = "<group>"; };
 		ED40AC7A1B9ACF81004E7101 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED40AC7C1B9AD132004E7101 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		ED40AC7D1B9B2EA0004E7101 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		ED40AC7F1B9B2ED9004E7101 /* AddFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		ED40AC811B9B2EE6004E7101 /* MyAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
 		EDE57FDE1B9ACD5300E98DFB /* EcoBin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoBin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE57FE21B9ACD5300E98DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				ED40AC7A1B9ACF81004E7101 /* LoginViewController.swift */,
+				ED40AC7D1B9B2EA0004E7101 /* LeaderboardViewController.swift */,
+				ED40AC7F1B9B2ED9004E7101 /* AddFriendsViewController.swift */,
+				ED40AC811B9B2EE6004E7101 /* MyAccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -281,7 +290,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED40AC801B9B2ED9004E7101 /* AddFriendsViewController.swift in Sources */,
 				ED40AC7B1B9ACF81004E7101 /* LoginViewController.swift in Sources */,
+				ED40AC821B9B2EE6004E7101 /* MyAccountViewController.swift in Sources */,
+				ED40AC7E1B9B2EA0004E7101 /* LeaderboardViewController.swift in Sources */,
 				EDE57FE41B9ACD5300E98DFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>71AAA75F-B246-415D-BC08-DC1FC21C34B6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EcoBin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>014A6164D5E4AAE4B012F83BA798E823C72F76A7</key>
+		<string>github.com:thanasistratigakis/EcoBin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EcoBin.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>014A6164D5E4AAE4B012F83BA798E823C72F76A7</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:thanasistratigakis/EcoBin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>014A6164D5E4AAE4B012F83BA798E823C72F76A7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>014A6164D5E4AAE4B012F83BA798E823C72F76A7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>EcoBin</string>
+		</dict>
+	</array>
+</dict>
+</plist>
