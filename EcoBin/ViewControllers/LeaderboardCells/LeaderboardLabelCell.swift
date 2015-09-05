@@ -1,5 +1,5 @@
 //
-//  LeaderboardUserCell.swift
+//  LeaderboardLabelCell.swift
 //  EcoBin
 //
 //  Created by Thanasi Stratigakis on 9/5/15.
@@ -8,26 +8,22 @@
 
 import UIKit
 
-class LeaderboardUserCell: UITableViewCell {
+class LeaderboardLabelCell: UITableViewCell {
     
-    // Outlets go here
     @IBOutlet weak var rankLabel: UILabel!
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bottlesLabel: UILabel!
     
-    
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        // Initialization code
     }
-    
-    
-    
+
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+
         // Configure the view for the selected state
     }
+
 }

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="LeaderboardLabelTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeaderboardLabelTableViewCell" id="Dbk-0k-AR7" customClass="LeaderboardLabelCell" customModule="EcoBin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dbk-0k-AR7" id="80k-67-nFs">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rank" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0o-hf-MS9">
+                        <rect key="frame" x="8" y="8" width="50" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="abA-p3-nrI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awr-II-edJ">
+                        <rect key="frame" x="98" y="8" width="50" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="YFq-jK-jf9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottles" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCQ-AL-VDO">
+                        <rect key="frame" x="242" y="8" width="70" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="SJw-LC-buW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V0o-hf-MS9" firstAttribute="leading" secondItem="80k-67-nFs" secondAttribute="leadingMargin" id="5oT-7g-iX5"/>
+                    <constraint firstItem="Awr-II-edJ" firstAttribute="top" secondItem="80k-67-nFs" secondAttribute="topMargin" id="7gx-Ub-yg1"/>
+                    <constraint firstItem="XCQ-AL-VDO" firstAttribute="trailing" secondItem="80k-67-nFs" secondAttribute="trailingMargin" id="H5M-RH-h6b"/>
+                    <constraint firstItem="Awr-II-edJ" firstAttribute="leading" secondItem="V0o-hf-MS9" secondAttribute="trailing" constant="40" id="LZy-BH-aPC"/>
+                    <constraint firstItem="XCQ-AL-VDO" firstAttribute="top" secondItem="80k-67-nFs" secondAttribute="topMargin" id="TlL-p5-Eug"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XCQ-AL-VDO" secondAttribute="bottom" id="eyT-lA-biS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="V0o-hf-MS9" secondAttribute="bottom" constant="3.5" id="pvx-64-f2R"/>
+                    <constraint firstItem="V0o-hf-MS9" firstAttribute="top" secondItem="80k-67-nFs" secondAttribute="topMargin" id="xAV-9F-zF2"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Awr-II-edJ" secondAttribute="bottom" id="yPh-ym-rP1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottlesLabel" destination="XCQ-AL-VDO" id="Nnw-6N-fsi"/>
+                <outlet property="nameLabel" destination="Awr-II-edJ" id="XE2-1r-ifq"/>
+                <outlet property="rankLabel" destination="V0o-hf-MS9" id="1lD-Ya-n1Q"/>
+            </connections>
+            <point key="canvasLocation" x="322" y="178"/>
+        </tableViewCell>
+    </objects>
+</document>
