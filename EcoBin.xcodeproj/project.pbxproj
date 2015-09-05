@@ -17,6 +17,7 @@
 		ED40AC891B9B564D004E7101 /* LeaderboardUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED40AC881B9B564D004E7101 /* LeaderboardUserCell.swift */; };
 		EDD72F251B9B6C6700120445 /* LeaderboardLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD72F241B9B6C6700120445 /* LeaderboardLabelCell.xib */; };
 		EDD72F271B9B6C8A00120445 /* LeaderboardLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD72F261B9B6C8A00120445 /* LeaderboardLabelCell.swift */; };
+		EDD72F2C1B9B930100120445 /* FriendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD72F2B1B9B930100120445 /* FriendSearchTableViewCell.swift */; };
 		EDE57FE41B9ACD5300E98DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */; };
 		EDE57FE91B9ACD5300E98DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FE71B9ACD5300E98DFB /* Main.storyboard */; };
 		EDE57FEB1B9ACD5300E98DFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FEA1B9ACD5300E98DFB /* Images.xcassets */; };
@@ -48,6 +49,7 @@
 		ED40AC881B9B564D004E7101 /* LeaderboardUserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardUserCell.swift; sourceTree = "<group>"; };
 		EDD72F241B9B6C6700120445 /* LeaderboardLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardLabelCell.xib; sourceTree = "<group>"; };
 		EDD72F261B9B6C8A00120445 /* LeaderboardLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardLabelCell.swift; sourceTree = "<group>"; };
+		EDD72F2B1B9B930100120445 /* FriendSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchTableViewCell.swift; sourceTree = "<group>"; };
 		EDE57FDE1B9ACD5300E98DFB /* EcoBin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoBin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE57FE21B9ACD5300E98DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		ED40AC791B9ACF69004E7101 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EDD72F2A1B9B92EB00120445 /* FriendSearchCells */,
 				ED40AC851B9B5543004E7101 /* LeaderboardCells */,
 				ED40AC7A1B9ACF81004E7101 /* LoginViewController.swift */,
 				ED40AC7D1B9B2EA0004E7101 /* LeaderboardViewController.swift */,
@@ -116,6 +119,14 @@
 				EDD72F261B9B6C8A00120445 /* LeaderboardLabelCell.swift */,
 			);
 			path = LeaderboardCells;
+			sourceTree = "<group>";
+		};
+		EDD72F2A1B9B92EB00120445 /* FriendSearchCells */ = {
+			isa = PBXGroup;
+			children = (
+				EDD72F2B1B9B930100120445 /* FriendSearchTableViewCell.swift */,
+			);
+			path = FriendSearchCells;
 			sourceTree = "<group>";
 		};
 		EDE57FD51B9ACD5300E98DFB = {
@@ -315,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD72F2C1B9B930100120445 /* FriendSearchTableViewCell.swift in Sources */,
 				ED40AC801B9B2ED9004E7101 /* AddFriendsViewController.swift in Sources */,
 				ED40AC7B1B9ACF81004E7101 /* LoginViewController.swift in Sources */,
 				EDD72F271B9B6C8A00120445 /* LeaderboardLabelCell.swift in Sources */,
