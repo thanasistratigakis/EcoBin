@@ -12,8 +12,8 @@ class LeaderboardViewController: UIViewController, UITableViewDataSource, UITabl
     
     @IBOutlet weak var leaderboardTableView: UITableView!
     
+    var friends: [PFUser]?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,6 +23,23 @@ class LeaderboardViewController: UIViewController, UITableViewDataSource, UITabl
         leaderboardTableView.reloadData()
         // Do any additional setup after loading the view.
     }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        ParseHelper.getFollowingUsersForUser(PFUser.currentUser()!) {
+            (results:[AnyObject]?, error: NSError?) -> Void in
+            let relations = results as? [PFObject] ?? []
+            // use map to extract the User from a Follow object
+            self.friends = relations.map {
+                $0.objectForKey(ParseHelper.ParseFollowToUser) as! PFUser
+            }
+            self.leaderboardTableView.reloadData()
+        
+        }
+    }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -34,10 +51,15 @@ class LeaderboardViewController: UIViewController, UITableViewDataSource, UITabl
 
 extension LeaderboardViewController: UITableViewDataSource {
     
-    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.layoutMargins = UIEdgeInsetsZero
-        return 6
+        
+        if let friends = friends {
+            return friends.count
+        } else {
+            return 0
+        }
+
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -48,27 +70,19 @@ extension LeaderboardViewController: UITableViewDataSource {
             return cell
         } else if indexPath.row >= 0 {
             let cell = tableView.dequeueReusableCellWithIdentifier("LeaderboardUserTableViewCell", forIndexPath: indexPath) as! LeaderboardUserCell
+            var rankNum = indexPath.row + 1
+            cell.rankLabel.text = String(rankNum)
+            cell.user = friends?[indexPath.row]
             return cell
         } else {
             let cell = UITableViewCell()
             return cell
         }
-
-        
+  
     }
-    
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-
             return 80
-        
-        
-        
     }
-    
 
-    
-    
-    
-    
 }

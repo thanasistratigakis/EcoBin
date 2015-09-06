@@ -200,8 +200,3 @@ extension AddFriendsViewController: FriendSearchTableViewCellDelegate {
     
     
 }
-
-
-
-
-
