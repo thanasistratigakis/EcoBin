@@ -18,6 +18,7 @@
 		EDD72F251B9B6C6700120445 /* LeaderboardLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDD72F241B9B6C6700120445 /* LeaderboardLabelCell.xib */; };
 		EDD72F271B9B6C8A00120445 /* LeaderboardLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD72F261B9B6C8A00120445 /* LeaderboardLabelCell.swift */; };
 		EDD72F2C1B9B930100120445 /* FriendSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD72F2B1B9B930100120445 /* FriendSearchTableViewCell.swift */; };
+		EDD7331A1B9BD6A500120445 /* ConvenienceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDD733191B9BD6A500120445 /* ConvenienceKit.framework */; };
 		EDE57FE41B9ACD5300E98DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */; };
 		EDE57FE91B9ACD5300E98DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FE71B9ACD5300E98DFB /* Main.storyboard */; };
 		EDE57FEB1B9ACD5300E98DFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDE57FEA1B9ACD5300E98DFB /* Images.xcassets */; };
@@ -50,6 +51,7 @@
 		EDD72F241B9B6C6700120445 /* LeaderboardLabelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardLabelCell.xib; sourceTree = "<group>"; };
 		EDD72F261B9B6C8A00120445 /* LeaderboardLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardLabelCell.swift; sourceTree = "<group>"; };
 		EDD72F2B1B9B930100120445 /* FriendSearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchTableViewCell.swift; sourceTree = "<group>"; };
+		EDD733191B9BD6A500120445 /* ConvenienceKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ConvenienceKit.framework; sourceTree = "<group>"; };
 		EDE57FDE1B9ACD5300E98DFB /* EcoBin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcoBin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDE57FE21B9ACD5300E98DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDE57FE31B9ACD5300E98DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BED54B0F69860E276F9638E /* libPods-EcoBin.a in Frameworks */,
+				EDD7331A1B9BD6A500120445 /* ConvenienceKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 		32C415BCAEBBBFD00D0C6011 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDD733191B9BD6A500120445 /* ConvenienceKit.framework */,
 				10E0334836F283E52F2F2711 /* libPods-EcoBin.a */,
 			);
 			name = Frameworks;
@@ -462,6 +466,13 @@
 			baseConfigurationReference = C3523892ECFB3BDD37CCB63D /* Pods-EcoBin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)",
+					"/Users/ThanasiStratigakis/Desktop/ConvenienceKitBase/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ConvenienceKitBase/Frameworks",
+				);
 				INFOPLIST_FILE = EcoBin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,6 +485,13 @@
 			baseConfigurationReference = 17D30CA05D7D0D28293A67F7 /* Pods-EcoBin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)",
+					"/Users/ThanasiStratigakis/Desktop/ConvenienceKitBase/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/ConvenienceKitBase/Frameworks",
+				);
 				INFOPLIST_FILE = EcoBin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,6 +506,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ConvenienceKitBase/Frameworks",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -507,6 +527,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ConvenienceKitBase/Frameworks",
 				);
 				INFOPLIST_FILE = EcoBinTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

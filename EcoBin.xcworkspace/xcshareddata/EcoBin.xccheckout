@@ -12,6 +12,8 @@
 	<dict>
 		<key>014A6164D5E4AAE4B012F83BA798E823C72F76A7</key>
 		<string>github.com:thanasistratigakis/EcoBin.git</string>
+		<key>CB052C10A398EDB30DC1C7070D48D418FE406D00</key>
+		<string>https://github.com/MakeSchool/ConvenienceKitBase.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>EcoBin.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>014A6164D5E4AAE4B012F83BA798E823C72F76A7</key>
 		<string>..</string>
+		<key>CB052C10A398EDB30DC1C7070D48D418FE406D00</key>
+		<string>../../../ConvenienceKitBase</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:thanasistratigakis/EcoBin.git</string>
@@ -28,6 +32,14 @@
 	<string>014A6164D5E4AAE4B012F83BA798E823C72F76A7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CB052C10A398EDB30DC1C7070D48D418FE406D00</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ConvenienceKitBase</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

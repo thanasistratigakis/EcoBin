@@ -8,13 +8,48 @@
 
 import UIKit
 
+
+protocol FriendSearchTableViewCellDelegate: class {
+    func cell(cell: FriendSearchTableViewCell, didSelectFollowUser user: PFUser)
+    func cell(cell: FriendSearchTableViewCell, didSelectUnfollowUser user: PFUser)
+}
+
 class FriendSearchTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
-
     @IBOutlet weak var friendButton: UIButton!
+    weak var delegate: FriendSearchTableViewCellDelegate?
+    
+    var user: PFUser? {
+        didSet {
+            nameLabel.text = user?.username
+        }
+    }
+    
+    var canFriend: Bool? = true {
+        didSet {
+            /*
+            Change the state of the follow button based on whether or not
+            it is possible to follow a user.
+            */
+            if let canFriend = canFriend {
+                friendButton.selected = !canFriend
+            }
+        }
+    }
+    
+    
+    
     
     @IBAction func friendButtonTapped(sender: AnyObject) {
+        if let canFriend = canFriend where canFriend == true {
+            delegate?.cell(self, didSelectFollowUser: user!)
+            self.canFriend = false
+        } else {
+            delegate?.cell(self, didSelectUnfollowUser: user!)
+            self.canFriend = true
+        }
+        
     }
     
     
